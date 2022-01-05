@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name BatteryHolder)(type Legacy)(uri ${KIPRJMOD}/CustomLibs/BatteryHolder/BatteryHolder.lib)(options "")(descr ""))
+  (lib (name BeepingCircuit555-rescue)(type Legacy)(uri ${KIPRJMOD}/BeepingCircuit555-rescue.lib)(options "")(descr ""))
+)

@@ -1,0 +1,143 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# BatteryHolder_S8421-45R
+#
+DEF BatteryHolder_S8421-45R BT 0 40 Y Y 1 L N
+F0 "BT" 0 100 50 H V L CNN
+F1 "BatteryHolder_S8421-45R" 0 200 50 H V L CNN
+F2 "BatteryHolder" 0 300 50 H I L CNN
+F3 "https://cdn.harwin.com/pdfs/S8421R.pdf" 0 400 50 H I L CNN
+F4 "No" 0 500 50 H I L CNN "automotive"
+F5 "Batt" 0 600 50 H I L CNN "category"
+F6 "Gold" 0 700 50 H I L CNN "contact material"
+F7 "SMT COIN CELL HOLDER FOR CR2032" 0 800 50 H I L CNN "description"
+F8 "Connectors" 0 900 50 H I L CNN "device class L1"
+F9 "unset" 0 1000 50 H I L CNN "device class L2"
+F10 "unset" 0 1100 50 H I L CNN "device class L3"
+F11 "BATTERY HOLDER COIN 20MM SMD" 0 1200 50 H I L CNN "digikey description"
+F12 "952-1737-1-ND" 0 1300 50 H I L CNN "digikey part number"
+F13 "5.5mm" 0 1400 50 H I L CNN "height"
+F14 "Yes" 0 1500 50 H I L CNN "lead free"
+F15 "dd32a0e7fce280dc" 0 1600 50 H I L CNN "library id"
+F16 "Harwin" 0 1700 50 H I L CNN "manufacturer"
+F17 "PCB, Surface Mount" 0 1800 50 H I L CNN "mounting type"
+F18 "Coin Cell Battery Holders EZ BDWR, SMT COIN CELL HOLDER CR2032" 0 1900 50 H I L CNN "mouser description"
+F19 "855-S8421-45R" 0 2000 50 H I L CNN "mouser part number"
+F20 "2" 0 2100 50 H I L CNN "number of contacts"
+F21 "CONN_SMT_HOLDER_15MM6_23MM79" 0 2200 50 H I L CNN "package"
+F22 "Yes" 0 2300 50 H I L CNN "rohs"
+F23 "+105°C" 0 2400 50 H I L CNN "temperature range high"
+F24 "-40°C" 0 2500 50 H I L CNN "temperature range low"
+DRAW
+T 0 50 -375 60 0 0 0 - Normal 0 C C
+T 900 50 -25 60 0 1 0 + Normal 0 C C
+P 2 1 1 0 50 -300 -50 -300 N
+P 2 1 1 0 50 -160 -50 -160 N
+P 2 1 1 0 100 -230 -100 -230 N
+P 2 1 1 0 100 -100 -100 -100 N
+X CATHODE 1 0 -400 100 U 40 0 1 1 P
+X ANODE 2 0 0 100 D 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Buzzer
+#
+DEF Device_Buzzer BZ 0 1 Y N 1 F N
+F0 "BZ" 150 50 50 H V L CNN
+F1 "Device_Buzzer" 150 -50 50 H V L CNN
+F2 "" -25 100 50 V I C CNN
+F3 "" -25 100 50 V I C CNN
+$FPLIST
+ *Buzzer*
+$ENDFPLIST
+DRAW
+A 0 0 125 -899 899 0 1 0 N 0 -125 0 125
+P 2 0 1 0 -65 75 -45 75 N
+P 2 0 1 0 -55 85 -55 65 N
+P 2 0 1 0 0 125 0 -125 N
+X - 1 -100 100 100 R 50 50 1 1 P
+X + 2 -100 -100 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_CP
+#
+DEF Device_CP C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_CP" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ CP_*
+$ENDFPLIST
+DRAW
+S -90 20 90 40 0 1 0 N
+S 90 -20 -90 -40 0 1 0 F
+P 2 0 1 0 -70 90 -30 90 N
+P 2 0 1 0 -50 110 -50 70 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_US
+#
+DEF Device_R_US R 0 0 N Y 1 F N
+F0 "R" 100 0 50 V V C CNN
+F1 "Device_R_US" -100 0 50 V V C CNN
+F2 "" 40 -10 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 90 0 100 N
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Timer_TLC555xPS
+#
+DEF Timer_TLC555xPS U 0 20 Y Y 1 F N
+F0 "U" -400 350 50 H V L CNN
+F1 "Timer_TLC555xPS" 100 350 50 H V L CNN
+F2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" 650 -400 50 H I C CNN
+F3 "" 850 -400 50 H I C CNN
+ALIAS LMC555xMM TLC555xPS
+$FPLIST
+ *VSSOP*3.0x3.0mm*P0.65mm*
+$ENDFPLIST
+DRAW
+S -350 -300 350 300 0 1 10 f
+S -350 -300 350 300 0 1 10 f
+X GND 1 0 -400 100 U 50 50 0 0 W
+X VCC 8 0 400 100 D 50 50 0 0 W
+X TR 2 -500 200 150 R 50 50 1 1 I
+X Q 3 500 200 150 L 50 50 1 1 O
+X R 4 -500 -200 150 R 50 50 1 1 I I
+X CV 5 -500 0 150 R 50 50 1 1 I
+X THR 6 500 -200 150 L 50 50 1 1 I
+X DIS 7 500 0 150 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

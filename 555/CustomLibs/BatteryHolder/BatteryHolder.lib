@@ -1,0 +1,44 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# S8421-45R
+#
+DEF S8421-45R BT 0 40 Y Y 1 L N
+F0 "BT" 0 100 50 H V L CNN
+F1 "S8421-45R" 0 200 50 H V L CNN
+F2 "BatteryHolder" 0 300 50 H I L CNN
+F3 "https://cdn.harwin.com/pdfs/S8421R.pdf" 0 400 50 H I L CNN
+F4 "No" 0 500 50 H I L CNN "automotive"
+F5 "Batt" 0 600 50 H I L CNN "category"
+F6 "Gold" 0 700 50 H I L CNN "contact material"
+F7 "SMT COIN CELL HOLDER FOR CR2032" 0 800 50 H I L CNN "description"
+F8 "Connectors" 0 900 50 H I L CNN "device class L1"
+F9 "unset" 0 1000 50 H I L CNN "device class L2"
+F10 "unset" 0 1100 50 H I L CNN "device class L3"
+F11 "BATTERY HOLDER COIN 20MM SMD" 0 1200 50 H I L CNN "digikey description"
+F12 "952-1737-1-ND" 0 1300 50 H I L CNN "digikey part number"
+F13 "5.5mm" 0 1400 50 H I L CNN "height"
+F14 "Yes" 0 1500 50 H I L CNN "lead free"
+F15 "dd32a0e7fce280dc" 0 1600 50 H I L CNN "library id"
+F16 "Harwin" 0 1700 50 H I L CNN "manufacturer"
+F17 "PCB, Surface Mount" 0 1800 50 H I L CNN "mounting type"
+F18 "Coin Cell Battery Holders EZ BDWR, SMT COIN CELL HOLDER CR2032" 0 1900 50 H I L CNN "mouser description"
+F19 "855-S8421-45R" 0 2000 50 H I L CNN "mouser part number"
+F20 "2" 0 2100 50 H I L CNN "number of contacts"
+F21 "CONN_SMT_HOLDER_15MM6_23MM79" 0 2200 50 H I L CNN "package"
+F22 "Yes" 0 2300 50 H I L CNN "rohs"
+F23 "+105°C" 0 2400 50 H I L CNN "temperature range high"
+F24 "-40°C" 0 2500 50 H I L CNN "temperature range low"
+DRAW
+T 0 50 -375 60 0 0 0 - Normal 0 C C
+T 900 50 -25 60 0 1 0 + Normal 0 C C
+P 2 1 1 0 50 -300 -50 -300 N
+P 2 1 1 0 50 -160 -50 -160 N
+P 2 1 1 0 100 -230 -100 -230 N
+P 2 1 1 0 100 -100 -100 -100 N
+X CATHODE 1 0 -400 100 U 40 0 1 1 P
+X ANODE 2 0 0 100 D 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
